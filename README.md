@@ -46,7 +46,7 @@ conda install conda-build
 create an environment and install needed modules manually
 
 ```bash
-conda create -n orb3  -c conda-forge -c astropy -c anaconda python=3.10.8 numpy scipy matplotlib astropy cython h5py dill pandas pytables jupyterlab photutils astroquery reproject gitpython
+conda create -n orb3  -c conda-forge -c astropy -c anaconda python=3.10.8 numpy scipy matplotlib astropy=5.3.4 cython=0.29.36 h5py dill pandas pytables jupyterlab photutils astroquery reproject gitpython
 
 conda activate orb3
 
