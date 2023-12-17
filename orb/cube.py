@@ -785,10 +785,10 @@ class HDFCube(orb.core.WCSData):
         hdr['SIMPLE'] = True
         hdr['BITPIX'] = (-32, 'np.float32')
         hdr['NAXIS'] = 3
-        hdr['EXTEND'] = False
         hdr['NAXIS1'] = self.dimx
         hdr['NAXIS2'] = self.dimy
         hdr['NAXIS3'] = self.dimz
+        hdr['EXTEND'] = False
 
         cubehdr = self.get_header()
         for ikey in cubehdr:
